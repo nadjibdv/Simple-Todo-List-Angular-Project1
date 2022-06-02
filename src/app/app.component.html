@@ -1,0 +1,18 @@
+<h1>TODOLIST PROJECT1 </h1>
+
+<br>
+
+<input type="text" placeholder="Enter New Text" name="" id="" #taskk>
+<br>
+<br>
+<button (click)="addTask(taskk.value)" > ADD </button>
+
+   <ul  *ngFor="let ls of list">
+
+    <li> {{ls.id}}   {{ls.name}}   <button (click)="removeTask(ls.id)">Remove</button> </li>
+
+   </ul>
+
+<router-outlet></router-outlet>
+
+
